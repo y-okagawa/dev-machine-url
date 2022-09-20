@@ -1,23 +1,28 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "show-local-ip",
-  "title": "Show Local IP",
-  "description": "show local ip address",
-  "icon": "command-icon.png",
+  "name": "dev-machine-url",
+  "title": "DevMachineURL",
+  "description": "generate development machine URL from local IP Address",
+  "icon": "dev-machine-url.png",
   "author": "okagaway",
   "license": "MIT",
   "commands": [
     {
       "name": "index",
-      "title": "Show Local IP",
-      "description": "Template with a plain detail view",
+      "title": "Generate development machine URL",
+      "description": "generate development machine URL from local IP Address",
       "mode": "view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.39.3"
+    "@raycast/api": "^1.39.3",
+    "ip": "^1.1.8",
+    "qrcode": "^1.5.1"
   },
   "devDependencies": {
+    "@types/ip": "^1.1.0",
+    "@types/qrcode": "^1.5.0",
+    "@types/react": "^18.0.20",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.32.0",
